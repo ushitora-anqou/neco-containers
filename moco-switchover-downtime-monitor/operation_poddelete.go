@@ -49,10 +49,6 @@ func (m *poddeleteOperation) Name() string {
 	}
 }
 
-func (m *poddeleteOperation) ClusterName() string {
-	return m.clusterName
-}
-
 func (m *poddeleteOperation) CheckPreCondition(ctx context.Context) (bool, error) {
 	cluster, err := getMySQLCluster(ctx, m.logger, m.clusterName)
 	if err != nil {

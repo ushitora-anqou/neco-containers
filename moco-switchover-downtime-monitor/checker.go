@@ -38,9 +38,11 @@ type Checker struct {
 	operations  []Operation
 }
 
-func NewChecker(clusterName string, logger *zap.Logger) (*Checker, error) {
-	ctx := context.TODO()
-
+// NewChecker creates a new Checker object.
+// ctx is the context.
+// clusterName is the name of the checked MySQLCluster.
+// logger is the logger.
+func NewChecker(ctx context.Context, clusterName string, logger *zap.Logger) (*Checker, error) {
 	c := &Checker{}
 	c.clusterName = clusterName
 	c.logger = logger.With(zap.String("cluster", clusterName))
@@ -67,7 +69,7 @@ func NewChecker(clusterName string, logger *zap.Logger) (*Checker, error) {
 }
 
 // `Run` repeatedly checks the specified MySQLCluster.
-// `ctx` is the context. Typically, the context is cancelled when this program is received SIGTERM.
+// `ctx` is the context.
 func (c *Checker) Run(ctx context.Context) {
 	c.logger.Info("starting checker")
 	defer c.logger.Info("stopping checker")
@@ -77,19 +79,19 @@ func (c *Checker) Run(ctx context.Context) {
 			c.operations[i], c.operations[j] = c.operations[j], c.operations[i]
 		})
 		for _, operation := range c.operations {
-			c.cooldown(ctx)
-			if ctx.Err() != nil {
+			err := c.cooldown(ctx)
+			if err != nil {
 				return
 			}
-			c.check(ctx, operation)
-			if ctx.Err() != nil {
+			err = c.check(ctx, operation)
+			if err != nil {
 				return
 			}
 		}
 	}
 }
 
-func (c *Checker) cooldown(ctx context.Context) {
+func (c *Checker) cooldown(ctx context.Context) error {
 	cooldownDuration := cooldownDurationMin + time.Duration(rand.Int63n(int64(cooldownDurationMax-cooldownDurationMin)))
 	c.logger.Info("begin cooldown", zap.Stringer("duration", cooldownDuration))
 	cooldownTimer := time.NewTimer(cooldownDuration)
@@ -97,20 +99,21 @@ func (c *Checker) cooldown(ctx context.Context) {
 	select {
 	case <-ctx.Done():
 		c.logger.Info("cancel cooldown")
-		return
+		return ctx.Err()
 	case <-cooldownTimer.C:
 	}
 	c.logger.Info("end cooldown")
+	return nil
 }
 
-func (c *Checker) check(ctx context.Context, operation Operation) {
+func (c *Checker) check(ctx context.Context, operation Operation) error {
 	logger := c.logger.With(zap.String("operation", operation.Name()))
 	logger.Info("begin checking")
 
-	c.waitForPreCondition(ctx, logger, operation)
-	if ctx.Err() != nil {
+	err := c.waitForPreCondition(ctx, logger, operation)
+	if err != nil {
 		logger.Info("cancel checking")
-		return
+		return err
 	}
 
 	timedCtx, cancel := context.WithTimeout(ctx, completionTimeout)
@@ -132,6 +135,7 @@ func (c *Checker) check(ctx context.Context, operation Operation) {
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
+		time.Sleep(time.Second) // in order to execute the operation after the first ping
 		c.executeAndWaitForCompletion(ctx, timedCtx, logger, cancelPinger, stopPinger, operation)
 	}()
 
@@ -169,13 +173,14 @@ func (c *Checker) check(ctx context.Context, operation Operation) {
 
 	if ctx.Err() != nil {
 		logger.Info("cancel checking")
-		return
+		return ctx.Err()
 	}
 
 	logger.Info("end checking")
+	return nil
 }
 
-func (c *Checker) waitForPreCondition(ctx context.Context, logger *zap.Logger, operation Operation) {
+func (c *Checker) waitForPreCondition(ctx context.Context, logger *zap.Logger, operation Operation) error {
 	startTime := time.Now()
 	preconditionCheckTicker := time.NewTicker(preconditionCheckInterval)
 	defer preconditionCheckTicker.Stop()
@@ -184,8 +189,7 @@ func (c *Checker) waitForPreCondition(ctx context.Context, logger *zap.Logger, o
 	for {
 		met, err := operation.CheckPreCondition(ctx)
 		if err != nil {
-			// cancelled
-			return
+			return err
 		}
 		if met {
 			break
@@ -193,8 +197,7 @@ func (c *Checker) waitForPreCondition(ctx context.Context, logger *zap.Logger, o
 
 		select {
 		case <-ctx.Done():
-			// cancelled
-			return
+			return ctx.Err()
 		case <-preconditionWarningTicker.C:
 			logger.Warn("precondition is not met yet", zap.Stringer("duration", time.Since(startTime).Round(time.Second)))
 		case <-preconditionCheckTicker.C:
@@ -202,6 +205,7 @@ func (c *Checker) waitForPreCondition(ctx context.Context, logger *zap.Logger, o
 	}
 
 	logger.Info("precondition is met")
+	return nil
 }
 
 // executeAndWaitForCompletion first executes the operation specified and wait for its completion.
@@ -299,76 +303,7 @@ pingLoop:
 			defer wg.Done()
 
 			now := time.Now()
-			succeeded := func() bool {
-				pingCtx, cancel := context.WithTimeout(timedCtx, pingerTimeout)
-				defer cancel()
-
-				db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@(%s)/%s", username, c.password, serviceFQDN, databaseName))
-				if err != nil {
-					// sql.Open just create an object and does not connect to the database.
-					// So, its error should be reported.
-					logger.Error("sql.Open failed", zap.Error(err))
-					return false
-				}
-				defer db.Close()
-				db.SetMaxOpenConns(1)
-
-				if doWrite {
-					stmt, err := db.PrepareContext(pingCtx, "UPDATE tbl SET val=? WHERE id=1")
-					if err != nil {
-						if timedCtx.Err() == nil {
-							logger.Debug("sql.DB.PrepareContext failed", zap.Error(err))
-						}
-						return false
-					}
-					defer stmt.Close()
-
-					result, err := stmt.ExecContext(pingCtx, rand.Int31())
-					if err != nil {
-						if timedCtx.Err() == nil {
-							logger.Debug("sql.Stmt.ExecContext failed", zap.Error(err))
-						}
-						return false
-					}
-
-					num, err := result.RowsAffected()
-					if err != nil {
-						if timedCtx.Err() == nil {
-							logger.Debug("sql.Result.RowsAffected failed", zap.Error(err))
-						}
-						return false
-					}
-					if num != 1 {
-						logger.Debug("the number of rows affected is not 1")
-						return false
-					}
-				} else {
-					stmt, err := db.PrepareContext(pingCtx, "SELECT val FROM tbl WHERE id=0")
-					if err != nil {
-						if timedCtx.Err() == nil {
-							logger.Debug("sql.DB.PrepareContext failed", zap.Error(err))
-						}
-						return false
-					}
-					defer stmt.Close()
-
-					row := stmt.QueryRowContext(pingCtx)
-					var val int
-					err = row.Scan(&val)
-					if err != nil {
-						if timedCtx.Err() == nil {
-							if err == sql.ErrNoRows {
-								logger.Debug("sql.Row.Scan failed", zap.Error(err))
-							} else {
-								logger.Debug("the number of rows returned is not 1")
-							}
-						}
-						return false
-					}
-				}
-
-				return true
-			}()
+			succeeded := c.pingOnce(timedCtx, logger, serviceFQDN, doWrite)
 
 			if !succeeded && timedCtx.Err() == nil {
 				func() {
@@ -422,4 +357,76 @@ pingLoop:
 	downtimeNetHistogramVec.With(labels).Observe(netDuration.Seconds())
 
 	logger.Debug("end pinger")
+}
+
+// pingOnce checks the availability of the endpoint once.
+func (c *Checker) pingOnce(ctx context.Context, logger *zap.Logger, serviceFQDN string, doWrite bool) bool {
+	pingCtx, cancel := context.WithTimeout(ctx, pingerTimeout)
+	defer cancel()
+
+	db, err := sql.Open("mysql", fmt.Sprintf("%s:%s@(%s)/%s", username, c.password, serviceFQDN, databaseName))
+	if err != nil {
+		// sql.Open just create an object and does not connect to the database.
+		// So, its error should be reported.
+		logger.Error("sql.Open failed", zap.Error(err))
+		return false
+	}
+	defer db.Close()
+	db.SetMaxOpenConns(1)
+
+	if doWrite {
+		stmt, err := db.PrepareContext(pingCtx, "UPDATE tbl SET val=? WHERE id=1")
+		if err != nil {
+			if ctx.Err() == nil {
+				logger.Debug("sql.DB.PrepareContext failed", zap.Error(err))
+			}
+			return false
+		}
+		defer stmt.Close()
+
+		result, err := stmt.ExecContext(pingCtx, rand.Int31())
+		if err != nil {
+			if ctx.Err() == nil {
+				logger.Debug("sql.Stmt.ExecContext failed", zap.Error(err))
+			}
+			return false
+		}
+
+		num, err := result.RowsAffected()
+		if err != nil {
+			if ctx.Err() == nil {
+				logger.Debug("sql.Result.RowsAffected failed", zap.Error(err))
+			}
+			return false
+		}
+		if num != 1 {
+			logger.Debug("the number of rows affected is not 1")
+			return false
+		}
+	} else {
+		stmt, err := db.PrepareContext(pingCtx, "SELECT val FROM tbl WHERE id=0")
+		if err != nil {
+			if ctx.Err() == nil {
+				logger.Debug("sql.DB.PrepareContext failed", zap.Error(err))
+			}
+			return false
+		}
+		defer stmt.Close()
+
+		row := stmt.QueryRowContext(pingCtx)
+		var val int
+		err = row.Scan(&val)
+		if err != nil {
+			if ctx.Err() == nil {
+				if err == sql.ErrNoRows {
+					logger.Debug("sql.Row.Scan failed", zap.Error(err))
+				} else {
+					logger.Debug("the number of rows returned is not 1")
+				}
+			}
+			return false
+		}
+	}
+
+	return true
 }

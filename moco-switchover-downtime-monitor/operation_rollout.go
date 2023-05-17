@@ -28,10 +28,6 @@ func (m *rolloutOperation) Name() string {
 	return "rollout"
 }
 
-func (m *rolloutOperation) ClusterName() string {
-	return m.clusterName
-}
-
 func (m *rolloutOperation) CheckPreCondition(ctx context.Context) (bool, error) {
 	cluster, err := getMySQLCluster(ctx, m.logger, m.clusterName)
 	if err != nil {

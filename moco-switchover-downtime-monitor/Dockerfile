@@ -7,7 +7,6 @@ WORKDIR /work
 # Build statically linked binary.
 RUN CGO_ENABLED=0 go build ./...
 
-#FROM quay.io/cybozu/ubuntu:22.04
 FROM scratch
 
 COPY --from=build /work/moco-switchover-downtime-monitor /moco-switchover-downtime-monitor

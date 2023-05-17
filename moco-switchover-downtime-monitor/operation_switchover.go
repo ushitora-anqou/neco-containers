@@ -25,10 +25,6 @@ func (m *switchoverOperation) Name() string {
 	return "switchover"
 }
 
-func (m *switchoverOperation) ClusterName() string {
-	return m.clusterName
-}
-
 func (m *switchoverOperation) CheckPreCondition(ctx context.Context) (bool, error) {
 	cluster, err := getMySQLCluster(ctx, m.logger, m.clusterName)
 	if err != nil {

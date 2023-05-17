@@ -12,9 +12,6 @@ type Operation interface {
 	// For example, "switchover"
 	Name() string
 
-	// ClusterName returns the name of the target MySQLCluster.
-	ClusterName() string
-
 	// `CheckPrecondition` checks the precondition for this operation.
 	// If the context is done, returns ctx.Err().
 	// If the precondition is met, returns true. In this case, this object may save the current state for later use.

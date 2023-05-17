@@ -74,11 +74,14 @@ func run() int {
 	wg.Add(1)
 	go func() {
 		defer wg.Done()
+		defer cancel()
+		go func() {
+			<-ctx.Done()
+			server.Shutdown(context.Background())
+		}()
 		err := server.ListenAndServe()
 		if err != nil && err != http.ErrServerClosed {
 			logger.Error("failed to start HTTP server", zap.Error(err))
-			cancel()
-			return
 		}
 	}()
 
@@ -87,20 +90,27 @@ func run() int {
 		wg.Add(1)
 		go func() {
 			defer wg.Done()
-			checker, err := NewChecker(n, logger)
+			defer cancel()
+			checker, err := NewChecker(ctx, n, logger)
 			if err != nil {
 				logger.Error("failed to initialize checker", zap.String("cluster", n), zap.Error(err))
-				cancel()
 				return
 			}
 			checker.Run(ctx)
 		}()
 	}
 
-	signal := <-signalCh
-	logger.Info("caught signal", zap.String("signal", signal.String()))
-	cancel()
-	server.Shutdown(context.Background())
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		defer cancel()
+		select {
+		case signal := <-signalCh:
+			logger.Info("caught signal", zap.String("signal", signal.String()))
+		case <-ctx.Done():
+		}
+	}()
+
 	wg.Wait()
 	logger.Info("termination completed")
 	return 0

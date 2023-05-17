@@ -49,10 +49,6 @@ func (m *killprocOperation) Name() string {
 	}
 }
 
-func (m *killprocOperation) ClusterName() string {
-	return m.clusterName
-}
-
 func (m *killprocOperation) CheckPreCondition(ctx context.Context) (bool, error) {
 	cluster, err := getMySQLCluster(ctx, m.logger, m.clusterName)
 	if err != nil {
