@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        product:
-          - admission
-          - alertmanager
+        include:
+          - { github: admission, quay: neco-admission }
+          - { github: alertmanager, quay: alertmanager }
 #         - argocd
 #         - bird
 #         - blackbox_exporter
@@ -90,19 +90,19 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Get tag
-        run: echo "tag=$(git show origin/main:${{ matrix.product }}/TAG)" >> $GITHUB_OUTPUT
+        run: echo "tag=$(git show origin/main:${{ matrix.github }}/TAG)" >> $GITHUB_OUTPUT
         id: get-tag
-      - name: Run Trivy (quay.io/cybozu/${{ matrix.product }}:${{ env.tag }})
+      - name: Run Trivy (quay.io/cybozu/${{ matrix.quay }}:${{ env.tag }})
         uses: aquasecurity/trivy-action@0.10.0
         with:
-          image-ref: quay.io/cybozu/${{ matrix.product }}:${{ env.tag }}
+          image-ref: quay.io/cybozu/${{ matrix.quay }}:${{ env.tag }}
           format: json
-          output: ${{ matrix.product }}-${{ env.tag }}.json
+          output: ${{ matrix.quay }}-${{ env.tag }}.json
         env:
           tag: ${{ steps.get-tag.outputs.tag }}
       - uses: actions/upload-artifact@v3
         with:
-          path: ${{ matrix.product }}-${{ steps.get-tag.outputs.tag }}.json
+          path: ${{ matrix.quay }}-${{ steps.get-tag.outputs.tag }}.json
 
   build:
     needs: scan
