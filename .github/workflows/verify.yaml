@@ -10,7 +10,83 @@ jobs:
     runs-on: ubuntu-22.04
     strategy:
       matrix:
-        product: [ceph]
+        product:
+          - admission
+          - alertmanager
+#         - argocd
+#         - bird
+#         - blackbox_exporter
+#         - bmc-reverse-proxy
+#         - cadvisor
+#         - ceph-extra-exporter
+#         - ceph
+#         - cephcsi
+#         - cert-manager
+#         - chrony
+#         - cilium-certgen
+#         - cilium-operator-generic
+#         - cilium
+#         - configmap-reload
+#         - contour
+#         - coredns
+#         - csi-attacher
+#         - csi-node-driver-registrar
+#         - csi-provisioner
+#         - csi-resizer
+#         - csi-snapshotter
+#         - dex
+#         - envoy
+#         - etcd
+#         - external-dns
+#         - fluent-bit
+#         - go-ipfs
+#         - golang-all
+#         - gorush
+#         - grafana-operator
+#         - grafana
+#         - grafana_plugins_init
+#         - heartbeat
+#         - hubble-relay
+#         - hubble-ui
+#         - hubble
+#         - ipfs-cluster
+#         - kube-metrics-adapter
+#         - kube-state-metrics
+#         - kube-storage-version-migrator
+#         - kubernetes
+#         - local-pv-provisioner
+#         - loki
+#         - machines-endpoints
+#         - memcached-exporter
+#         - memcached
+#         - meows-dctest-runner
+#         - meows-neco-runner
+#         - mysql
+#         - mysqld_exporter
+#         - necosen
+#         - nerdctl
+#         - opentelemetry-collector
+#         - pause
+#         - pomerium
+#         - prometheus-adapter
+#         - prometheus-config-reloader
+#         - promtail
+#         - pushgateway
+#         - redis
+#         - registry
+#         - rook
+#         - s3gw
+#         - sealed-secrets
+#         - serf
+#         - squid
+#         - teleport-node
+#         - tempo
+#         - testhttpd
+#         - unbound
+#         - unbound_exporter
+#         - vault
+#         - victoriametrics-operator
+#         - victoriametrics
     steps:
       - uses: actions/checkout@v3
       - name: Get tag
@@ -26,7 +102,6 @@ jobs:
           tag: ${{ steps.get-tag.outputs.tag }}
       - uses: actions/upload-artifact@v3
         with:
-          name: ${{ matrix.product }}
           path: ${{ matrix.product }}-${{ steps.get-tag.outputs.tag }}.json
 
   build:
@@ -49,7 +124,6 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
-          name: ceph
           path: trivy-result/${{ steps.genid.outputs.id }}
 
       - name: Set up Go
