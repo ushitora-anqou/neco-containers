@@ -102,6 +102,7 @@ jobs:
           tag: ${{ steps.get-tag.outputs.tag }}
       - uses: actions/upload-artifact@v3
         with:
+          name: trivy-result
           path: ${{ matrix.quay }}-${{ steps.get-tag.outputs.tag }}.json
 
   build:
@@ -124,6 +125,7 @@ jobs:
 
       - uses: actions/download-artifact@v3
         with:
+          name: trivy-result
           path: trivy-result/${{ steps.genid.outputs.id }}
 
       - name: Set up Go
