@@ -27,7 +27,7 @@ jobs:
       - uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.product }}
-          path: ${{ steps.get-tag.outputs.tag }}.json
+          path: ${{ matrix.product }}-${{ steps.get-tag.outputs.tag }}.json
 
   build:
     needs: scan
