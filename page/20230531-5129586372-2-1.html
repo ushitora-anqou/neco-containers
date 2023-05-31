@@ -1,0 +1,5161 @@
+
+
+
+<html>
+<head>
+<title>daily-usn</title>
+<style>
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+.group-header th {
+    font-size: 200%;
+}
+.sub-header th {
+    font-size: 150%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    white-space: nowrap;
+    padding: .3em;
+}
+table {
+    margin: 0 auto;
+}
+.severity {
+    text-align: center;
+    font-weight: bold;
+    color: #fafafa;
+}
+.severity-LOW .severity { background-color: #5fbb31; }
+.severity-MEDIUM .severity { background-color: #e9c600; }
+.severity-HIGH .severity { background-color: #ff8800; }
+.severity-CRITICAL .severity { background-color: #e40000; }
+.severity-UNKNOWN .severity { background-color: #747474; }
+.severity-LOW { background-color: #5fbb3160; }
+.severity-MEDIUM { background-color: #e9c60060; }
+.severity-HIGH { background-color: #ff880060; }
+.severity-CRITICAL { background-color: #e4000060; }
+.severity-UNKNOWN { background-color: #74747460; }
+table tr td:first-of-type {
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+<h1>Daily Vulnerability Report (20230531-5129586372-2-1)</h1>
+
+
+<h2>quay.io/cybozu/ceph:17.2.6.1</h2>
+<h3>New vulnerabilities appeared in this run</h3>
+
+<table>
+<thead>
+    <tr>
+        <th>Package Name</th>
+        <th>Vulnerability ID</th>
+        <th>USN ID</th>
+        <th>Severity</th>
+        <th>Installed Version </th>
+        <th>Fixed Version</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>coreutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-2781">CVE-2016-2781</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>8.30-3ubuntu2</td>
+    <td></td>
+    <td>coreutils: Non-privileged session can escape to the parent session in chroot</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>curl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28321">CVE-2023-28321</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>IDN wildcard match may lead to Improper Cerificate Validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>curl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28322">CVE-2023-28322</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>more POST-after-PUT confusion</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>dmidecode</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-30630">CVE-2023-30630</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.2-3</td>
+    <td></td>
+    <td>dump-bin to overwrite a local file</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>gcc-9-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>gpgv</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3219">CVE-2022-3219</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.2.19-3ubuntu2.2</td>
+    <td></td>
+    <td>denial of service issue (resource consumption) using compressed packets</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libasan5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libblas3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4048">CVE-2021-4048</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.9.0-1build1</td>
+    <td></td>
+    <td>lapack: Out-of-bounds read in *larrv</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc-dev-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc6-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libcurl4</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28321">CVE-2023-28321</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>IDN wildcard match may lead to Improper Cerificate Validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libcurl4</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28322">CVE-2023-28322</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>more POST-after-PUT confusion</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libgcc-9-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libglib2.0-0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24593">CVE-2023-24593</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.64.6-1~ubuntu20.04.4</td>
+    <td></td>
+    <td>DoS caused by handling a malicious text-form variant</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libglib2.0-0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25180">CVE-2023-25180</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.64.6-1~ubuntu20.04.4</td>
+    <td></td>
+    <td>DoS caused by malicious serialised variant</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libjs-jquery</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-11023">CVE-2020-11023</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.3.1~dfsg-3</td>
+    <td></td>
+    <td>jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>liblapack3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4048">CVE-2021-4048</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.9.0-1build1</td>
+    <td></td>
+    <td>lapack: Out-of-bounds read in *larrv</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21911">CVE-2023-21911</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>InnoDB unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21919">CVE-2023-21919</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21920">CVE-2023-21920</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21929">CVE-2023-21929</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21933">CVE-2023-21933</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21935">CVE-2023-21935</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21940">CVE-2023-21940</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21945">CVE-2023-21945</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21946">CVE-2023-21946</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21947">CVE-2023-21947</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21953">CVE-2023-21953</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Partition unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21955">CVE-2023-21955</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Partition unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21962">CVE-2023-21962</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21966">CVE-2023-21966</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>JSON unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21972">CVE-2023-21972</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DML unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21976">CVE-2023-21976</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21977">CVE-2023-21977</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21980">CVE-2023-21980</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Client programs unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21982">CVE-2023-21982</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpcre3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-11164">CVE-2017-11164</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2:8.39-12ubuntu0.1</td>
+    <td></td>
+    <td>pcre: OP_KETRMAX feature in the match function in pcre_exec.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libperl5.30</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libssl1.1</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2650">CVE-2023-2650</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6119-1">USN-6119-1</a></td>
+    <td>MEDIUM</td>
+    <td>1.1.1f-1ubuntu2.18</td>
+    <td>1.1.1f-1ubuntu2.19</td>
+    <td>Possible DoS translating ASN.1 object identifiers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libstdc++-9-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libsystemd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libudev1</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+<tr class="severity-HIGH">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1380">CVE-2023-1380</a></td>
+    <td><a href=""></a></td>
+    <td>HIGH</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>a USB-accessible slab-out-of-bounds read in brcmfmac</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-7445">CVE-2013-7445</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: memory exhaustion via crafted Graphics Execution Manager (GEM) objects</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2015-8553">CVE-2015-8553</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>CVE-2015-2150 CVE-2015-8553 xen: non-maskable interrupts triggerable by guests (xsa120)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-8660">CVE-2016-8660</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: xfs: local DoS due to a page lock order bug in the XFS seek hole/data implementation</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-17977">CVE-2018-17977</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Mishandled interactions among XFRM Netlink messages, IPPROTO_AH packets, and IPPROTO_IP packets resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12362">CVE-2020-12362</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Integer overflow in Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-24504">CVE-2020-24504</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Uncontrolled resource consumption in some Intel(R) Ethernet E810 Adapter drivers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-26144">CVE-2020-26144</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: accepting unencrypted A-MSDU frames that start with RFC1042 header</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-27835">CVE-2020-27835</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-4751-1">USN-4751-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: child process is able to access parent mm through hfi dev file handle</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-36310">CVE-2020-36310</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: infinite loop in set_memory_region_test in arch/x86/kvm/svm/svm.c for certain nested page faults</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-36691">CVE-2020-36691</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: lib/nlattr.c allows attackers to cause a denial of service</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-20320">CVE-2021-20320</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>s390 eBPF JIT miscompilation issues fixes</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-3864">CVE-2021-3864</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>descendant's dumpable setting with certain SUID binaries</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4001">CVE-2021-4001</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5207-1">USN-5207-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: race condition when the EBPF map is frozen</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4148">CVE-2021-4148</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Improper implementation of block_invalidatepage() allows users to crash the kernel</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0168">CVE-2022-0168</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5469-1">USN-5469-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>smb2_ioctl_query_info NULL pointer dereference</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0400">CVE-2022-0400</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Out of bounds read in the smc protocol stack</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0480">CVE-2022-0480</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>memcg does not limit the number of POSIX file locks allowing memory exhaustion</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1184">CVE-2022-1184</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free and memory errors in ext4 when mounting and operating on a corrupted image</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1247">CVE-2022-1247</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>A race condition bug in rose_connect()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1280">CVE-2022-1280</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>concurrency use-after-free between drm_setmaster_ioctl and drm_mode_getresources</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25836">CVE-2022-25836</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-27672">CVE-2022-27672</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: AMD: Cross-Thread Return Address Predictions</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-2961">CVE-2022-2961</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: race condition in rose_bind()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29900">CVE-2022-29900</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5564-1">USN-5564-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>RetBleed Arbitrary Speculative Code Execution with Return Instructions</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3344">CVE-2022-3344</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5911-1">USN-5911-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: KVM: SVM: nested shutdown interception could lead to host crash</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3523">CVE-2022-3523</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>race when faulting a device private page in memory manager</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-36402">CVE-2022-36402</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: integer overflow in vmwgfx_execbuf.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3707">CVE-2022-3707</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5915-1">USN-5915-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>Double-free in split_2MB_gtt_entry when function intel_gvt_dma_map_guest_page failed</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-38096">CVE-2022-38096</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: NULL pointer dereference in vmw_cmd_dx_define_query</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-38457">CVE-2022-38457</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free in vmw_cmd_res_check</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-39189">CVE-2022-39189</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5667-1">USN-5667-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>TLB flush operations are mishandled in certain KVM_VCPU_PREEMPTED leading to guest malfunctioning</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-40133">CVE-2022-40133</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: use-after-free in vmw_execbuf_tie_context</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-4269">CVE-2022-4269</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>CPU soft lockup in TC mirred egress-to-ingress action</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-4543">CVE-2022-4543</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: KASLR Prefetch Bypass Breaks KPTI</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45887">CVE-2022-45887</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: memory leak in ttusb_dec_exit_dvb() in media/usb/ttusb-dec/ttusb_dec.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0030">CVE-2023-0030</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Use after Free in nvkm_vmm_pfn_map</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0459">CVE-2023-0459</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>Copy_from_user on 64-bit versions of the Linux kernel does not impleme ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0590">CVE-2023-0590</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5850-1">USN-5850-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free due to race condition in qdisc_graft()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0597">CVE-2023-0597</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Randomize per-cpu entry area</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1075">CVE-2023-1075</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>tls_is_tx_ready() checked list_entry</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1076">CVE-2023-1076</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: tap: tap_open(): correctly initialize socket uid</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1077">CVE-2023-1077</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Type confusion in pick_next_rt_entity()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1078">CVE-2023-1078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>kernel: Heap OOB Write in rds_rm_zerocopy_callback()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1582">CVE-2023-1582</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Soft lockup occurred during __page_mapcount</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1611">CVE-2023-1611</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: race between quota disable and quota assign ioctls in fs/btrfs/ioctl.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1859">CVE-2023-1859</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6056-1">USN-6056-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Use after free in xen_9pfs_front_remove due to race condition</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1998">CVE-2023-1998</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Spectre v2 SMT mitigations problem</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2002">CVE-2023-2002</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Unauthorized management command execution</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2007">CVE-2023-2007</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>DPT I2O controller TOCTOU information disclosure vulnerability</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2162">CVE-2023-2162</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>UAF during login when accessing the shost ipaddress</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2176">CVE-2023-2176</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Slab-out-of-bound read in compare_netdev_and_ip</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2194">CVE-2023-2194</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>out-of-bounds write in xgene_slimpro_i2c_xfer()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23000">CVE-2023-23000</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: incorrect return value for the error case in the tegra_xusb_find_port_node</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23004">CVE-2023-23004</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: incorrect check for error case in the malidp_check_pages_threshold</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26242">CVE-2023-26242</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>afu_mmio_region_get_by_offset in drivers/fpga/dfl-afu-region.c in the  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28327">CVE-2023-28327</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>denial of service problem in net/unix/diag.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28466">CVE-2023-28466</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>a race condition in do_tls_getsockopt in net/tls/tls_main.c may lead to use-after-free or NULL pointer dereference</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-30772">CVE-2023-30772</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>The Linux kernel before 6.2.9 has a race condition and resultant use-a ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-32269">CVE-2023-32269</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>user after free in nr_listen in net/netrom/af_netrom.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-0537">CVE-2017-0537</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13165">CVE-2017-13165</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13693">CVE-2017-13693</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: ACPI operand cache leak in dsutils.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-1121">CVE-2018-1121</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>procps-ng, procps: process hiding through race condition enumerating /proc</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12928">CVE-2018-12928</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: NULL pointer dereference in hfs_ext_read_extent in hfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12929">CVE-2018-12929</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free in ntfs_read_locked_inode in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12930">CVE-2018-12930</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: stack-based out-of-bounds write in ntfs_end_buffer_async_read in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12931">CVE-2018-12931</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: stack-based out-of-bounds write in ntfs_attr_find in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-14899">CVE-2019-14899</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>VPN: an attacker can inject data into the TCP stream which allows a hijack of active connections inside the VPN tunnel</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-15213">CVE-2019-15213</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free caused by malicious USB device in drivers/media/usb/dvb-usb/dvb-usb-init.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-19378">CVE-2019-19378</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds write in index_rbio_pages in fs/btrfs/raid56.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-19814">CVE-2019-19814</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds write in __remove_dirty_segment in fs/f2fs/segment.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12363">CVE-2020-12363</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Improper input validation in some Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12364">CVE-2020-12364</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Null pointer dereference in some Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-14304">CVE-2020-14304</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>ethtool when reading eeprom of device could lead to memory leak</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-35501">CVE-2020-35501</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>audit not logging access to syscall open_by_handle_at for users with CAP_DAC_READ_SEARCH capability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-26934">CVE-2021-26934</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>An issue was discovered in the Linux kernel 4.18 through 5.10.16, as u ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-32078">CVE-2021-32078</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds read in arch/arm/mach-footbridge/personal-pci.c due to improper input validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-34981">CVE-2021-34981</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Bluetooth CMTP Module Double Free Privilege Escalation Vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39801">CVE-2021-39801</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-44879">CVE-2021-44879</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5302-1">USN-5302-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>NULL pointer dereference in folio_mark_dirty() via a crafted f2fs image</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0854">CVE-2022-0854</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5381-1">USN-5381-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>swiotlb information leak with DMA_FROM_DEVICE</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-41848">CVE-2022-41848</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Race condition between mgslpc_ioctl and mgslpc_detach</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44032">CVE-2022-44032</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: Race between cmm_open() and cm4000_detach() result in UAF</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44033">CVE-2022-44033</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: A race condition between cm4040_open() and reader_detach() may result in UAF</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44034">CVE-2022-44034</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: A use-after-free due to race between scr24x_open()  and scr24x_remove()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45884">CVE-2022-45884</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_register_device()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45885">CVE-2022-45885</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_frontend.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45886">CVE-2022-45886</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_net.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45919">CVE-2022-45919</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_ca_en50221.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-47518">CVE-2022-47518</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5911-1">USN-5911-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: a heap-based buffer overflow in drivers/net/wireless/microchip/wilc1000/cfg80211.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-47519">CVE-2022-47519</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5938-1">USN-5938-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: an out-of-bounds write in drivers/net/wireless/microchip/wilc1000/cfg80211.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1079">CVE-2023-1079</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use After Free in asus_remove()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1118">CVE-2023-1118</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6001-1">USN-6001-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>use-after-free in drivers/media/rc/ene_ir.c due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1513">CVE-2023-1513</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>information leak in KVM_GET_DEBUGREGS ioctl on 32-bit systems</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1670">CVE-2023-1670</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use after free bug in xirc2ps_detach</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1855">CVE-2023-1855</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free bug in remove function xgene_hwmon_remove</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1989">CVE-2023-1989</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use after free bug in btsdio_remove due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1990">CVE-2023-1990</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use after free bug in ndlc_remove due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-22995">CVE-2023-22995</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: missing platform_device_put() and kfree() calls in an error path in dwc3_qcom_acpi_register_core() in drivers/usb/dwc3/dwc3-qcom.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25012">CVE-2023-25012</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: hid: use-after-free in bigben_set_led()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-33203">CVE-2023-33203</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>The Linux kernel before 6.2.9 has a race condition and resultant use-a ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-33288">CVE-2023-33288</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free in bq24190_remove in drivers/power/supply/bq24190_charger.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>locales</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>login</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-4235">CVE-2013-4235</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5745-1">USN-5745-1</a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>shadow-utils: TOCTOU race conditions by copying and removing directory trees</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>login</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29383">CVE-2023-29383</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>Improper input validation in shadow-utils package utility chfn</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>openssh-client</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-14145">CVE-2020-14145</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:8.2p1-4ubuntu0.5</td>
+    <td></td>
+    <td>openssh: Observable discrepancy leading to an information leak in the algorithm negotiation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>openssh-client</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-41617">CVE-2021-41617</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5666-1">USN-5666-1</a></td>
+    <td>LOW</td>
+    <td>1:8.2p1-4ubuntu0.5</td>
+    <td></td>
+    <td>openssh: privilege escalation when AuthorizedKeysCommand or AuthorizedPrincipalsCommand are configured</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>openssl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2650">CVE-2023-2650</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6119-1">USN-6119-1</a></td>
+    <td>MEDIUM</td>
+    <td>1.1.1f-1ubuntu2.18</td>
+    <td>1.1.1f-1ubuntu2.19</td>
+    <td>Possible DoS translating ASN.1 object identifiers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>passwd</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-4235">CVE-2013-4235</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5745-1">USN-5745-1</a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>shadow-utils: TOCTOU race conditions by copying and removing directory trees</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>passwd</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29383">CVE-2023-29383</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>Improper input validation in shadow-utils package utility chfn</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl-modules-5.30</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3-cryptography</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23931">CVE-2023-23931</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.8-3ubuntu0.1</td>
+    <td></td>
+    <td>memory corruption via immutable objects</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3-jinja2</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-28493">CVE-2020-28493</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5701-1">USN-5701-1</a></td>
+    <td>LOW</td>
+    <td>2.10.1-2</td>
+    <td></td>
+    <td>python-jinja2: ReDoS vulnerability in the urlize filter</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3-rsa</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13757">CVE-2020-13757</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-4478-1">USN-4478-1</a></td>
+    <td>MEDIUM</td>
+    <td>4.0-3</td>
+    <td></td>
+    <td>python-rsa: decryption of ciphertext leads to DoS</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3-rsa</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-25658">CVE-2020-25658</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>4.0-3</td>
+    <td></td>
+    <td>python-rsa: bleichenbacher timing oracle attack against RSA decryption</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>udev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+</tbody>
+</table>
+
+<h3>All vulnerabilities found by Trivy</h3>
+<center>
+<details>
+<summary>Click here to unfold</summary>
+
+<table>
+<thead>
+    <tr>
+        <th>Package Name</th>
+        <th>Vulnerability ID</th>
+        <th>USN ID</th>
+        <th>Severity</th>
+        <th>Installed Version </th>
+        <th>Fixed Version</th>
+        <th>Title</th>
+    </tr>
+</thead>
+<tbody>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-common</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>binutils-x86-64-linux-gnu</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>coreutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-2781">CVE-2016-2781</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>8.30-3ubuntu2</td>
+    <td></td>
+    <td>coreutils: Non-privileged session can escape to the parent session in chroot</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>curl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28321">CVE-2023-28321</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>IDN wildcard match may lead to Improper Cerificate Validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>curl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28322">CVE-2023-28322</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>more POST-after-PUT confusion</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>dmidecode</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-30630">CVE-2023-30630</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.2-3</td>
+    <td></td>
+    <td>dump-bin to overwrite a local file</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>gcc-9-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>gpgv</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3219">CVE-2022-3219</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.2.19-3ubuntu2.2</td>
+    <td></td>
+    <td>denial of service issue (resource consumption) using compressed packets</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libasan5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libbinutils</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libblas3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4048">CVE-2021-4048</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.9.0-1build1</td>
+    <td></td>
+    <td>lapack: Out-of-bounds read in *larrv</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc-dev-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libc6-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf-nobfd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-45078">CVE-2021-45078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5341-1">USN-5341-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: out-of-bounds write in stab_xcoff_builtin_type() in stabs.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25584">CVE-2023-25584</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Out of bounds read in parse_module function in bfd/vms-alpha.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25585">CVE-2023-25585</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `file_table` of `struct module *module` is uninitialized</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25588">CVE-2023-25588</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6101-1">USN-6101-1</a></td>
+    <td>MEDIUM</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td>2.34-6ubuntu1.5</td>
+    <td>Field `the_bfd` of `asymbol` is uninitialized in function `bfd_mach_o_get_synthetic_symtab`</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13716">CVE-2017-13716</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Memory leak with the C++ symbol demangler routine in libiberty</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-20657">CVE-2018-20657</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>libiberty: Memory leak in demangle_template function resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-1010204">CVE-2019-1010204</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5349-1">USN-5349-1</a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>binutils: Improper Input Validation, Signed/Unsigned Comparison, Out-of-bounds Read in gold/fileread.cc and elfcpp/elfcpp_file.h leads to denial of service</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libctf0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-46195">CVE-2021-46195</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.34-6ubuntu1.4</td>
+    <td></td>
+    <td>gcc: uncontrolled recursion in libiberty/rust-demangle.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libcurl4</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28321">CVE-2023-28321</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>IDN wildcard match may lead to Improper Cerificate Validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libcurl4</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28322">CVE-2023-28322</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>7.68.0-1ubuntu2.18</td>
+    <td></td>
+    <td>more POST-after-PUT confusion</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libgcc-9-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libglib2.0-0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24593">CVE-2023-24593</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.64.6-1~ubuntu20.04.4</td>
+    <td></td>
+    <td>DoS caused by handling a malicious text-form variant</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libglib2.0-0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25180">CVE-2023-25180</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.64.6-1~ubuntu20.04.4</td>
+    <td></td>
+    <td>DoS caused by malicious serialised variant</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libjs-jquery</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-11023">CVE-2020-11023</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.3.1~dfsg-3</td>
+    <td></td>
+    <td>jquery: Untrusted code execution via <option> tag in HTML passed to DOM manipulation methods</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>liblapack3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4048">CVE-2021-4048</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>3.9.0-1build1</td>
+    <td></td>
+    <td>lapack: Out-of-bounds read in *larrv</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21911">CVE-2023-21911</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>InnoDB unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21919">CVE-2023-21919</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21920">CVE-2023-21920</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21929">CVE-2023-21929</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21933">CVE-2023-21933</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DDL unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21935">CVE-2023-21935</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21940">CVE-2023-21940</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21945">CVE-2023-21945</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21946">CVE-2023-21946</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21947">CVE-2023-21947</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21953">CVE-2023-21953</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Partition unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21955">CVE-2023-21955</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Partition unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21962">CVE-2023-21962</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Components Services unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21966">CVE-2023-21966</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>JSON unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21972">CVE-2023-21972</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>DML unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21976">CVE-2023-21976</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21977">CVE-2023-21977</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21980">CVE-2023-21980</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Client programs unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libmysqlclient21</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-21982">CVE-2023-21982</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6060-1">USN-6060-1</a></td>
+    <td>MEDIUM</td>
+    <td>8.0.32-0ubuntu0.20.04.2</td>
+    <td>8.0.33-0ubuntu0.20.04.1</td>
+    <td>Optimizer unspecified vulnerability (CPU Apr 2023)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncurses6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libncursesw6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpcre3</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-11164">CVE-2017-11164</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2:8.39-12ubuntu0.1</td>
+    <td></td>
+    <td>pcre: OP_KETRMAX feature in the match function in pcre_exec.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libperl5.30</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libpython3.8-stdlib</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5core5a</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5dbus5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13962">CVE-2020-13962</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt5: incorrectly calls SSL_shutdown() in OpenSSL mid-handshake causing denial of service in TLS applications</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25255">CVE-2022-25255</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: QProcess could execute a binary from the current working directory when not found in the PATH</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-17507">CVE-2020-17507</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5081-1">USN-5081-1</a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>qt: buffer over-read in read_xbm_body in gui/image/qxbmhandler.cpp</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libqt5network5</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24607">CVE-2023-24607</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.12.8+dfsg-0ubuntu2.1</td>
+    <td></td>
+    <td>A possible DOS involving the Qt SQL ODBC driver plugin</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libssl1.1</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2650">CVE-2023-2650</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6119-1">USN-6119-1</a></td>
+    <td>MEDIUM</td>
+    <td>1.1.1f-1ubuntu2.18</td>
+    <td>1.1.1f-1ubuntu2.19</td>
+    <td>Possible DoS translating ASN.1 object identifiers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libstdc++-9-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13844">CVE-2020-13844</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>9.4.0-1ubuntu1~20.04.1</td>
+    <td></td>
+    <td>ARM straight-line speculation vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libsystemd0</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libtinfo6</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>libudev1</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+<tr class="severity-HIGH">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1380">CVE-2023-1380</a></td>
+    <td><a href=""></a></td>
+    <td>HIGH</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>a USB-accessible slab-out-of-bounds read in brcmfmac</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-7445">CVE-2013-7445</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: memory exhaustion via crafted Graphics Execution Manager (GEM) objects</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2015-8553">CVE-2015-8553</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>CVE-2015-2150 CVE-2015-8553 xen: non-maskable interrupts triggerable by guests (xsa120)</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-8660">CVE-2016-8660</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: xfs: local DoS due to a page lock order bug in the XFS seek hole/data implementation</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-17977">CVE-2018-17977</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Mishandled interactions among XFRM Netlink messages, IPPROTO_AH packets, and IPPROTO_IP packets resulting in a denial of service</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12362">CVE-2020-12362</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Integer overflow in Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-24504">CVE-2020-24504</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Uncontrolled resource consumption in some Intel(R) Ethernet E810 Adapter drivers</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-26144">CVE-2020-26144</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: accepting unencrypted A-MSDU frames that start with RFC1042 header</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-27835">CVE-2020-27835</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-4751-1">USN-4751-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: child process is able to access parent mm through hfi dev file handle</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-36310">CVE-2020-36310</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: infinite loop in set_memory_region_test in arch/x86/kvm/svm/svm.c for certain nested page faults</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-36691">CVE-2020-36691</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: lib/nlattr.c allows attackers to cause a denial of service</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-20320">CVE-2021-20320</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>s390 eBPF JIT miscompilation issues fixes</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-3864">CVE-2021-3864</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>descendant's dumpable setting with certain SUID binaries</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4001">CVE-2021-4001</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5207-1">USN-5207-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: race condition when the EBPF map is frozen</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-4148">CVE-2021-4148</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Improper implementation of block_invalidatepage() allows users to crash the kernel</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0168">CVE-2022-0168</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5469-1">USN-5469-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>smb2_ioctl_query_info NULL pointer dereference</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0400">CVE-2022-0400</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Out of bounds read in the smc protocol stack</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0480">CVE-2022-0480</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>memcg does not limit the number of POSIX file locks allowing memory exhaustion</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1184">CVE-2022-1184</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free and memory errors in ext4 when mounting and operating on a corrupted image</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1247">CVE-2022-1247</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>A race condition bug in rose_connect()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-1280">CVE-2022-1280</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>concurrency use-after-free between drm_setmaster_ioctl and drm_mode_getresources</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-25836">CVE-2022-25836</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-27672">CVE-2022-27672</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: AMD: Cross-Thread Return Address Predictions</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-2961">CVE-2022-2961</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: race condition in rose_bind()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29900">CVE-2022-29900</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5564-1">USN-5564-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>RetBleed Arbitrary Speculative Code Execution with Return Instructions</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3344">CVE-2022-3344</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5911-1">USN-5911-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: KVM: SVM: nested shutdown interception could lead to host crash</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3523">CVE-2022-3523</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>race when faulting a device private page in memory manager</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-36402">CVE-2022-36402</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: integer overflow in vmwgfx_execbuf.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-3707">CVE-2022-3707</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5915-1">USN-5915-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>Double-free in split_2MB_gtt_entry when function intel_gvt_dma_map_guest_page failed</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-38096">CVE-2022-38096</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: NULL pointer dereference in vmw_cmd_dx_define_query</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-38457">CVE-2022-38457</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free in vmw_cmd_res_check</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-39189">CVE-2022-39189</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5667-1">USN-5667-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>TLB flush operations are mishandled in certain KVM_VCPU_PREEMPTED leading to guest malfunctioning</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-40133">CVE-2022-40133</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: vmwgfx: use-after-free in vmw_execbuf_tie_context</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-4269">CVE-2022-4269</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>CPU soft lockup in TC mirred egress-to-ingress action</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-4543">CVE-2022-4543</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: KASLR Prefetch Bypass Breaks KPTI</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45887">CVE-2022-45887</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: memory leak in ttusb_dec_exit_dvb() in media/usb/ttusb-dec/ttusb_dec.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0030">CVE-2023-0030</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Use after Free in nvkm_vmm_pfn_map</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0459">CVE-2023-0459</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>Copy_from_user on 64-bit versions of the Linux kernel does not impleme ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0590">CVE-2023-0590</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5850-1">USN-5850-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free due to race condition in qdisc_graft()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-0597">CVE-2023-0597</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Randomize per-cpu entry area</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1075">CVE-2023-1075</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>tls_is_tx_ready() checked list_entry</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1076">CVE-2023-1076</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: tap: tap_open(): correctly initialize socket uid</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1077">CVE-2023-1077</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Type confusion in pick_next_rt_entity()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1078">CVE-2023-1078</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5978-1">USN-5978-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>kernel: Heap OOB Write in rds_rm_zerocopy_callback()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1582">CVE-2023-1582</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Soft lockup occurred during __page_mapcount</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1611">CVE-2023-1611</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: race between quota disable and quota assign ioctls in fs/btrfs/ioctl.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1859">CVE-2023-1859</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6056-1">USN-6056-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Use after free in xen_9pfs_front_remove due to race condition</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1998">CVE-2023-1998</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Spectre v2 SMT mitigations problem</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2002">CVE-2023-2002</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Unauthorized management command execution</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2007">CVE-2023-2007</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>DPT I2O controller TOCTOU information disclosure vulnerability</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2162">CVE-2023-2162</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>UAF during login when accessing the shost ipaddress</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2176">CVE-2023-2176</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Slab-out-of-bound read in compare_netdev_and_ip</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2194">CVE-2023-2194</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>out-of-bounds write in xgene_slimpro_i2c_xfer()</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23000">CVE-2023-23000</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: incorrect return value for the error case in the tegra_xusb_find_port_node</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23004">CVE-2023-23004</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: incorrect check for error case in the malidp_check_pages_threshold</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26242">CVE-2023-26242</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>afu_mmio_region_get_by_offset in drivers/fpga/dfl-afu-region.c in the  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28327">CVE-2023-28327</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>denial of service problem in net/unix/diag.c</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-28466">CVE-2023-28466</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>a race condition in do_tls_getsockopt in net/tls/tls_main.c may lead to use-after-free or NULL pointer dereference</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-30772">CVE-2023-30772</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>The Linux kernel before 6.2.9 has a race condition and resultant use-a ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-32269">CVE-2023-32269</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>user after free in nr_listen in net/netrom/af_netrom.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-0537">CVE-2017-0537</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13165">CVE-2017-13165</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2017-13693">CVE-2017-13693</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: ACPI operand cache leak in dsutils.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-1121">CVE-2018-1121</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>procps-ng, procps: process hiding through race condition enumerating /proc</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12928">CVE-2018-12928</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: NULL pointer dereference in hfs_ext_read_extent in hfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12929">CVE-2018-12929</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free in ntfs_read_locked_inode in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12930">CVE-2018-12930</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: stack-based out-of-bounds write in ntfs_end_buffer_async_read in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2018-12931">CVE-2018-12931</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: stack-based out-of-bounds write in ntfs_attr_find in the ntfs.ko</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-14899">CVE-2019-14899</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>VPN: an attacker can inject data into the TCP stream which allows a hijack of active connections inside the VPN tunnel</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-15213">CVE-2019-15213</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free caused by malicious USB device in drivers/media/usb/dvb-usb/dvb-usb-init.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-19378">CVE-2019-19378</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds write in index_rbio_pages in fs/btrfs/raid56.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2019-19814">CVE-2019-19814</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds write in __remove_dirty_segment in fs/f2fs/segment.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12363">CVE-2020-12363</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Improper input validation in some Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-12364">CVE-2020-12364</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Null pointer dereference in some Intel(R) Graphics Drivers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-14304">CVE-2020-14304</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>ethtool when reading eeprom of device could lead to memory leak</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-35501">CVE-2020-35501</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>audit not logging access to syscall open_by_handle_at for users with CAP_DAC_READ_SEARCH capability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-26934">CVE-2021-26934</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>An issue was discovered in the Linux kernel 4.18 through 5.10.16, as u ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-32078">CVE-2021-32078</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: out-of-bounds read in arch/arm/mach-footbridge/personal-pci.c due to improper input validation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-34981">CVE-2021-34981</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Bluetooth CMTP Module Double Free Privilege Escalation Vulnerability</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39801">CVE-2021-39801</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-44879">CVE-2021-44879</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5302-1">USN-5302-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>NULL pointer dereference in folio_mark_dirty() via a crafted f2fs image</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-0854">CVE-2022-0854</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5381-1">USN-5381-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>swiotlb information leak with DMA_FROM_DEVICE</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-41848">CVE-2022-41848</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: Race condition between mgslpc_ioctl and mgslpc_detach</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44032">CVE-2022-44032</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: Race between cmm_open() and cm4000_detach() result in UAF</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44033">CVE-2022-44033</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: A race condition between cm4040_open() and reader_detach() may result in UAF</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-44034">CVE-2022-44034</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Kernel: A use-after-free due to race between scr24x_open()  and scr24x_remove()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45884">CVE-2022-45884</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_register_device()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45885">CVE-2022-45885</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_frontend.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45886">CVE-2022-45886</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_net.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-45919">CVE-2022-45919</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: use-after-free due to race condition occurring in dvb_ca_en50221.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-47518">CVE-2022-47518</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5911-1">USN-5911-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: a heap-based buffer overflow in drivers/net/wireless/microchip/wilc1000/cfg80211.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-47519">CVE-2022-47519</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5938-1">USN-5938-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: an out-of-bounds write in drivers/net/wireless/microchip/wilc1000/cfg80211.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1079">CVE-2023-1079</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use After Free in asus_remove()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1118">CVE-2023-1118</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6001-1">USN-6001-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>use-after-free in drivers/media/rc/ene_ir.c due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1513">CVE-2023-1513</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6079-1">USN-6079-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td>5.4.0-149.166</td>
+    <td>information leak in KVM_GET_DEBUGREGS ioctl on 32-bit systems</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1670">CVE-2023-1670</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use after free bug in xirc2ps_detach</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1855">CVE-2023-1855</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free bug in remove function xgene_hwmon_remove</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1989">CVE-2023-1989</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use after free bug in btsdio_remove due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-1990">CVE-2023-1990</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>Use after free bug in ndlc_remove due to race condition</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-22995">CVE-2023-22995</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: missing platform_device_put() and kfree() calls in an error path in dwc3_qcom_acpi_register_core() in drivers/usb/dwc3/dwc3-qcom.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-25012">CVE-2023-25012</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6033-1">USN-6033-1</a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>kernel: hid: use-after-free in bigben_set_led()</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-33203">CVE-2023-33203</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>The Linux kernel before 6.2.9 has a race condition and resultant use-a ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>linux-libc-dev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-33288">CVE-2023-33288</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>5.4.0-148.165</td>
+    <td></td>
+    <td>use-after-free in bq24190_remove in drivers/power/supply/bq24190_charger.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>locales</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2016-20013">CVE-2016-20013</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.31-0ubuntu9.9</td>
+    <td></td>
+    <td></td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>login</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-4235">CVE-2013-4235</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5745-1">USN-5745-1</a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>shadow-utils: TOCTOU race conditions by copying and removing directory trees</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>login</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29383">CVE-2023-29383</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>Improper input validation in shadow-utils package utility chfn</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29491">CVE-2023-29491</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6099-1">USN-6099-1</a></td>
+    <td>MEDIUM</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>Local users can trigger security-relevant memory corruption via malformed data</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-39537">CVE-2021-39537</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: heap-based buffer overflow in _nc_captoinfo() in captoinfo.c</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>ncurses-bin</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2022-29458">CVE-2022-29458</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5477-1">USN-5477-1</a></td>
+    <td>LOW</td>
+    <td>6.2-0ubuntu2</td>
+    <td>6.2-0ubuntu2.1</td>
+    <td>ncurses: segfaulting OOB read</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>openssh-client</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-14145">CVE-2020-14145</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:8.2p1-4ubuntu0.5</td>
+    <td></td>
+    <td>openssh: Observable discrepancy leading to an information leak in the algorithm negotiation</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>openssh-client</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-41617">CVE-2021-41617</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5666-1">USN-5666-1</a></td>
+    <td>LOW</td>
+    <td>1:8.2p1-4ubuntu0.5</td>
+    <td></td>
+    <td>openssh: privilege escalation when AuthorizedKeysCommand or AuthorizedPrincipalsCommand are configured</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>openssl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-2650">CVE-2023-2650</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6119-1">USN-6119-1</a></td>
+    <td>MEDIUM</td>
+    <td>1.1.1f-1ubuntu2.18</td>
+    <td>1.1.1f-1ubuntu2.19</td>
+    <td>Possible DoS translating ASN.1 object identifiers</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>passwd</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2013-4235">CVE-2013-4235</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5745-1">USN-5745-1</a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>shadow-utils: TOCTOU race conditions by copying and removing directory trees</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>passwd</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-29383">CVE-2023-29383</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>1:4.8.1-1ubuntu5.20.04.4</td>
+    <td></td>
+    <td>Improper input validation in shadow-utils package utility chfn</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl-base</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>perl-modules-5.30</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-31484">CVE-2023-31484</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-6112-1">USN-6112-1</a></td>
+    <td>MEDIUM</td>
+    <td>5.30.0-9ubuntu0.3</td>
+    <td></td>
+    <td>CPAN.pm before 2.35 does not verify TLS certificates when downloading  ...</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3-cryptography</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-23931">CVE-2023-23931</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>2.8-3ubuntu0.1</td>
+    <td></td>
+    <td>memory corruption via immutable objects</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3-jinja2</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-28493">CVE-2020-28493</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5701-1">USN-5701-1</a></td>
+    <td>LOW</td>
+    <td>2.10.1-2</td>
+    <td></td>
+    <td>python-jinja2: ReDoS vulnerability in the urlize filter</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3-rsa</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-13757">CVE-2020-13757</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-4478-1">USN-4478-1</a></td>
+    <td>MEDIUM</td>
+    <td>4.0-3</td>
+    <td></td>
+    <td>python-rsa: decryption of ciphertext leads to DoS</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3-rsa</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2020-25658">CVE-2020-25658</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>4.0-3</td>
+    <td></td>
+    <td>python-rsa: bleichenbacher timing oracle attack against RSA decryption</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3.8</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-24329">CVE-2023-24329</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5888-1">USN-5888-1</a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>urllib.parse url blocklisting bypass</td>
+</tr>
+
+<tr class="severity-MEDIUM">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-27043">CVE-2023-27043</a></td>
+    <td><a href=""></a></td>
+    <td>MEDIUM</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>Parsing errors in email/_parseaddr.py lead to incorrect value in email address part of tuple</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>python3.8-minimal</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2021-28861">CVE-2021-28861</a></td>
+    <td><a href="https:/ubuntu.com/security/notices/USN-5629-1">USN-5629-1</a></td>
+    <td>LOW</td>
+    <td>3.8.10-0ubuntu1~20.04.7</td>
+    <td></td>
+    <td>open redirection vulnerability in lib/http/server.py may lead to information disclosure</td>
+</tr>
+
+<tr class="severity-LOW">
+    <td>udev</td>
+    <td><a href="https://avd.aquasec.com/nvd/cve-2023-26604">CVE-2023-26604</a></td>
+    <td><a href=""></a></td>
+    <td>LOW</td>
+    <td>245.4-4ubuntu3.21</td>
+    <td></td>
+    <td>privilege escalation via the less pager</td>
+</tr>
+
+</tbody>
+</table>
+
+</details>
+</center>
+
+
+</body>
+</html>
