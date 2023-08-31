@@ -1,0 +1,56 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "quay.io/cybozu/neco-admission:0.20.2",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:78aad85c20adad5571c77a9032879e7fbec1d922cb2604c57410975eef988edb",
+    "DiffIDs": [
+      "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+    ],
+    "RepoTags": [
+      "quay.io/cybozu/neco-admission:0.20.2"
+    ],
+    "RepoDigests": [
+      "quay.io/cybozu/neco-admission@sha256:dd87facf2cd9eda163ce44cd8e2827f067018938299aeb19fcf3dfea6ff8a0a6"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "0c56014a23676b5e1386b6ef144e259fb6118c19b36f2a1809707d5b59549dcb",
+      "created": "2023-05-31T01:22:28.125356148Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2023-05-31T01:22:27.849808467Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:d50fdff42e08fafa2840aa902711ddc70b0174cde329ce07d7e0849b1340a4b3 in /neco-admission "
+        },
+        {
+          "created": "2023-05-31T01:22:28.036083326Z",
+          "created_by": "/bin/sh -c #(nop)  USER 10000:10000",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-05-31T01:22:28.125356148Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/neco-admission\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/neco-admission"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:c80c3350b24871295a7ad59d70d4b0db0b3351233e4d64d50187a833b16ff80e",
+        "User": "10000:10000"
+      }
+    }
+  }
+}
