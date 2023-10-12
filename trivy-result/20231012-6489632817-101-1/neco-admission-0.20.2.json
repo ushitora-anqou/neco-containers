@@ -1,0 +1,151 @@
+{
+  "SchemaVersion": 2,
+  "ArtifactName": "quay.io/cybozu/neco-admission:0.20.2",
+  "ArtifactType": "container_image",
+  "Metadata": {
+    "ImageID": "sha256:78aad85c20adad5571c77a9032879e7fbec1d922cb2604c57410975eef988edb",
+    "DiffIDs": [
+      "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+    ],
+    "RepoTags": [
+      "quay.io/cybozu/neco-admission:0.20.2"
+    ],
+    "RepoDigests": [
+      "quay.io/cybozu/neco-admission@sha256:dd87facf2cd9eda163ce44cd8e2827f067018938299aeb19fcf3dfea6ff8a0a6"
+    ],
+    "ImageConfig": {
+      "architecture": "amd64",
+      "container": "0c56014a23676b5e1386b6ef144e259fb6118c19b36f2a1809707d5b59549dcb",
+      "created": "2023-05-31T01:22:28.125356148Z",
+      "docker_version": "20.10.23",
+      "history": [
+        {
+          "created": "2023-05-31T01:22:27.849808467Z",
+          "created_by": "/bin/sh -c #(nop) COPY file:d50fdff42e08fafa2840aa902711ddc70b0174cde329ce07d7e0849b1340a4b3 in /neco-admission "
+        },
+        {
+          "created": "2023-05-31T01:22:28.036083326Z",
+          "created_by": "/bin/sh -c #(nop)  USER 10000:10000",
+          "empty_layer": true
+        },
+        {
+          "created": "2023-05-31T01:22:28.125356148Z",
+          "created_by": "/bin/sh -c #(nop)  ENTRYPOINT [\"/neco-admission\"]",
+          "empty_layer": true
+        }
+      ],
+      "os": "linux",
+      "rootfs": {
+        "type": "layers",
+        "diff_ids": [
+          "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+        ]
+      },
+      "config": {
+        "Entrypoint": [
+          "/neco-admission"
+        ],
+        "Env": [
+          "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+        ],
+        "Image": "sha256:c80c3350b24871295a7ad59d70d4b0db0b3351233e4d64d50187a833b16ff80e",
+        "User": "10000:10000"
+      }
+    }
+  },
+  "Results": [
+    {
+      "Target": "neco-admission",
+      "Class": "lang-pkgs",
+      "Type": "gobinary",
+      "Vulnerabilities": [
+        {
+          "VulnerabilityID": "CVE-2023-39325",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.7.0",
+          "FixedVersion": "0.17.0",
+          "Layer": {
+            "Digest": "sha256:29a5ab2d39b53b9380813e84f55da0ae2992c5c0d6a1bb9926e28a4c74883116",
+            "DiffID": "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-39325",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "rapid stream resets can cause excessive work (CVE-2023-44487)",
+          "Description": "A flaw was found in the handling of multiplexed streams in the http/2 protocol. A client can repeatedly make requests for a new multiplex streams and immediately send a RST_STREAM frame to cancel them. This creates extra work for the server setting up and tearing down the streams while not hitting any server-side limit for maximum number of active streams per connection, resulting in a denial of service due to server resource consumption.",
+          "Severity": "MEDIUM",
+          "CVSS": {
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "V3Score": 7.5
+            }
+          },
+          "References": [
+            "golang.org/x/net",
+            "https://access.redhat.com/security/cve/CVE-2023-39325",
+            "https://access.redhat.com/security/cve/CVE-2023-44487",
+            "https://github.com/golang/go/issues/63417",
+            "https://go.dev/cl/534215",
+            "https://go.dev/cl/534235",
+            "https://go.dev/issue/63417",
+            "https://groups.google.com/g/golang-announce/c/iNNxDTCjZvo/m/UDd7VKQuAAAJ",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+            "https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487",
+            "https://www.cve.org/CVERecord?id=CVE-2023-39325"
+          ]
+        },
+        {
+          "VulnerabilityID": "CVE-2023-3978",
+          "PkgName": "golang.org/x/net",
+          "InstalledVersion": "v0.7.0",
+          "FixedVersion": "0.13.0",
+          "Layer": {
+            "Digest": "sha256:29a5ab2d39b53b9380813e84f55da0ae2992c5c0d6a1bb9926e28a4c74883116",
+            "DiffID": "sha256:326c2a7950e38cf5cc5b2875866a0c1b0893f37de3f28142fbc1ed54f4afd74e"
+          },
+          "SeveritySource": "ghsa",
+          "PrimaryURL": "https://avd.aquasec.com/nvd/cve-2023-3978",
+          "DataSource": {
+            "ID": "ghsa",
+            "Name": "GitHub Security Advisory Go",
+            "URL": "https://github.com/advisories?query=type%3Areviewed+ecosystem%3Ago"
+          },
+          "Title": "Cross site scripting",
+          "Description": "Text nodes not in the HTML namespace are incorrectly literally rendered, causing text which should be escaped to not be. This could lead to an XSS attack.",
+          "Severity": "MEDIUM",
+          "CweIDs": [
+            "CWE-79"
+          ],
+          "CVSS": {
+            "ghsa": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "nvd": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            },
+            "redhat": {
+              "V3Vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "V3Score": 6.1
+            }
+          },
+          "References": [
+            "https://access.redhat.com/security/cve/CVE-2023-3978",
+            "https://go.dev/cl/514896",
+            "https://go.dev/issue/61615",
+            "https://nvd.nist.gov/vuln/detail/CVE-2023-3978",
+            "https://pkg.go.dev/vuln/GO-2023-1988",
+            "https://www.cve.org/CVERecord?id=CVE-2023-3978"
+          ],
+          "PublishedDate": "2023-08-02T20:15:00Z",
+          "LastModifiedDate": "2023-08-07T18:24:00Z"
+        }
+      ]
+    }
+  ]
+}
